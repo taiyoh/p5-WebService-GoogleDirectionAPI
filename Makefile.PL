@@ -2,7 +2,10 @@ use inc::Module::Install;
 name 'WebService-GoogleDirectionAPI';
 all_from 'lib/WebService/GoogleDirectionAPI.pm';
 
-# requires '';
+requires 'URI';
+requires 'JSON';
+requires 'Furl';
+requires 'Class::Accessor::Lite';
 
 tests 't/*.t';
 author_tests 'xt';
